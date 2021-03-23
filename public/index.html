@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="media/chat.png" alt="Error Loading">
+        <h1>Welcome to Group Chat </h1>
+    </nav>
+
+    <div class="container"> </div>
+    
+    <div class="send">
+        <form action="#" id="send-container">
+            <input  autocomplete="off" type="text" name="messageInp" id="messageInp" placeholder="Type a message..." required>
+            <button  class="btn"type="submit" >Send</button>
+        </form>
+    </div>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+</body>
+</html>
