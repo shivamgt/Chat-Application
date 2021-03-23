@@ -4,7 +4,8 @@ const path = require('path');
 const http = require('http');
 const express = require('express');
 const socketio = require('socket.io');
-const mongoDb='mongodb+srv://shivamgupta:shivamgupta123@cluster0.5k59m.mongodb.net/message-database?retryWrites=true&w=majority';
+require('dotenv').config();
+const mongoDb=process.env.MONGO_DB;
 mongoose.connect(mongoDb, {useNewUrlParser:true, useUnifiedTopology:true}).then(()=>{
     console.log('connected');
 }).catch(err => console.log(err));
